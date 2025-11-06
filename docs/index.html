@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <title>Daftar Soal Praktikum</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; background: #f7f7f7; padding-top: 50px; }
-    h1 { color: #222; }
-    a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      border: 2px solid #333;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #333;
-      background-color: #fff;
-      transition: 0.2s;
-    }
-    a:hover {
-      background-color: #333;
-      color: #fff;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pusat Aktivitas – HTML & CSS / JavaScript</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Daftar Soal Praktikum</h1>
-  <a href="soal1/index.xhtml">Soal 1 - Formulir Registrasi Mahasiswa</a>
-  <a href="soal2/index.xhtml">Soal 2 - Reservasi Hotel</a>
+  <header>
+    <h1>Pusat Aktivitas Praktikum</h1>
+    <p>Kelompok tugas HTML & CSS serta JavaScript Dasar</p>
+  </header>
+
+  <main>
+    <!-- HTML & CSS -->
+    <section class="folder-group">
+      <h2>HTML & CSS</h2>
+      <div class="folders">
+        <a class="folder" href="HTML&CSS/soal1/index.xhtml">
+          <div class="folder-title">Soal 1</div>
+          <p>Formulir Registrasi Mahasiswa</p>
+        </a>
+        <a class="folder" href="HTML&CSS/soal2/index.xhtml">
+          <div class="folder-title">Soal 2</div>
+          <p>Reservasi Hotel</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT DASAR -->
+    <section class="folder-group">
+      <h2>JavaScript Dasar</h2>
+      <div class="folders">
+        <a class="folder" href="JAVASCRIPT/menu.html">
+          <div class="folder-title">JS Dasar</div>
+          <p>Kumpulan 5 latihan JavaScript (if, switch, form, regex)</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 | Client-Side Scripting Practicum</p>
+  </footer>
 </body>
 </html>
