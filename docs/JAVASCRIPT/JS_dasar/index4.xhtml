@@ -8,37 +8,69 @@
     function validate() {
       var name = document.forms["myForm"]["name"].value;
       var email = document.forms["myForm"]["email"].value;
+      var message = document.forms["myForm"]["message"].value;
 
-      if (name == "" || email == "") {
-        alert("Both fields must be filled!");
+      if (name == "" || email == "" || message == "") {
+        alert("All fields must be filled!");
         return false;
       }
       return true;
     }
   </script>
+  <style type="text/css">
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f5f8ff;
+      color: #333;
+      margin-top: 50px;
+    }
+    form {
+      width: 360px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    h2 { text-align: left; color: #3b7dd8; }
+    label { display: block; margin-top: 10px; font-weight: 500; text-align: left; }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      margin-top: 15px;
+      background: #3b7dd8;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover { background: #2e63b6; }
+  </style>
 </head>
 <body>
-  <h1>Form Validation (Internal Script)</h1>
   <form name="myForm" onsubmit="return validate();">
-    <table border="0" cellpadding="6" align="center">
-      <tr>
-        <td>Name:</td>
-        <td><input type="text" name="name" /></td>
-      </tr>
-      <tr>
-        <td>Email:</td>
-        <td><input type="text" name="email" /></td>
-      </tr>
-      <tr>
-        <td colspan="2" align="center">
-          <input type="submit" value="Send" />
-        </td>
-      </tr>
-    </table>
+    <h2>Form Validation (Internal Script)</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" />
+
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="email" />
+
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" rows="4"></textarea>
+
+    <input type="submit" value="Send" />
   </form>
-  <a href="JAVASCRIPT/menu.html" 
-     style="text-decoration:none; color:#3b7dd8; font-weight:600;">
-     Kembali ke Halaman Utama
-  </a>
+
+  <p style="text-align:center; margin-top:20px;">
+    <a href="/docs/JAVASCRIPT/menu.html" style="text-decoration:none; color:#3b7dd8; font-weight:600;">
+      Kembali ke Halaman Utama
+    </a>
+  </p>
 </body>
 </html>
